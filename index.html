@@ -18,13 +18,20 @@
 				margin-bottom: 5px;
 				
 			}
+			
+    		td{
+    			display: table-cell;
+    			border-collapse: separate;
+    			border-spacing: 2px;
+    			vertical-align: top;
+    		}
 		</style>
     </head>
 
-    <body>
+    <body style="width:100%">
     	<div align="center" style="width: 100%">
     	<img class="mypic" src="https://mvsr.winnou.net/fileyard/StudentPics/MVSR/fc5827a70921f67691054a29f18da36d.jpg" height="100px" width="100px" align="right" alt="sree" margin-left="20px"/>
-    	<h4 style="color:	#0000FF; font-family: Times New Roman; line-height: 5px;", align="center">PLACEMENT AND CAREER GUIDANCE CELL</h4>
+    	<h4 style="color:	#0000FF; font-family: Times New Roman; line-height: 15px;margin-top: 20px; margin-bottom: 7px;", align="center">PLACEMENT AND CAREER GUIDANCE CELL</h4>
     	<h2 style="color:	#0000FF; font-family: Times New Roman;", align="center"><b>MVSR ENGINEERING COLLEGE</b></h2>
     	<h5 style="color:	red; font-family: Times New Roman;", align="center", ><u>MASTER BIO-DATA FORM</u></h5>
     </div>
@@ -34,18 +41,22 @@
     		<li>&emsp;&emsp;<b><i> 2)You are adviced to maintain same Email-id and Mobile number entered here throught out your study.</i></b></li><br>
     	</ul>
     </div>
-    <div style="width: 100%">
+    <fieldset>
     	<form style="text-align: center;">
+    <div style="width: 100%">
+    	
     	<label for="Graduation" style="color:#C71585; ",align="center">Graduation Batch:</label>
 
 			<select id="Graduation">
+				<option value="2019-2023">2019-2023</option>
+				<option value="2018-2022">2018-2022</option>
   				<option value="2017-2021">2017-2021</option>
     			<option value="2016-2020">2016-2020</option>
     			<option value="2015-2019">2015-2019</option>
     			<option value="2014-2018">2014-2018</option>
 			</select>
 			<p style="font-size-adjust: 20px;color:#C71585;">Basic Information:</p>
-		</form>
+		
 	</div>
 	<div style="width: 100%">
 		<style type="text/css">
@@ -59,51 +70,50 @@
     			margin:20px;
 			}	
 		</style>
-		<form>
+		
 		<table style="width: 95%;" class="inner_table1" align="center" cellpadding="5" cellspacing="0">
 			<tr>
 				<td ><div align="left" >Roll No </div></td>
-            	
-            
-				<td align="right" >
-				:&nbsp<input type="number" placeholder="Ex:245X-XX-7XX-XXX" required></td>
+        
+				<td align="center" >
+				:<input type="tel" placeholder="Ex:245X-XX-7XX-XXX" pattern="[0-9]{4}-[0-9]{2}-[0-9]{3}-[0-9]{3}" required ></td>
 				<td ><div align="left">Choose Password</div></td>
             	
             
-				<td align="right" >
-				: <input type="Password"  ></td>
+				<td align="center" >
+				:&nbsp <input type="Password"  ></td>
 			 	<td ><div align="left">Re-Type Password</div></td>
             	
-            	<td align="right"  >
-				: <input type="Password" ></td>
+            	<td align="center"  >
+				:&nbsp <input type="Password" ></td>
 			</tr>
 			<tr>
 				<td ><div align="left">First Name</div></td>
             	
             
-				<td align="right" >
-				: <input type="number"  ></td>
+				<td align="center" >
+				: <input type="text"  ></td>
 				<td ><div align="left">Middle Name(if any)</div></td>
             	
             
-				<td align="right"  >
+				<td align="center"  >
 				: <input type="text"  ></td>
 			 	<td ><div align="left">Last Name(surname)</div></td>
             	
-            	<td align="right"  >
+            	<td align="center"  >
 				: <input type="text" ></td>
 			</tr>
 			<tr>
 				<td ><div align="left">Email ID</div></td>
             	
             
-				<td align="right" >
-				: <input type="number" ></td>
+				<td align="center" >
+				: <input type="text" ></td>
 				<td ><div align="left">Branch</div></td>
             	
             
-				<td align="right" >
-				&emsp;&emsp;: <label for="Branch" ></label>
+				<td align="left" >
+				: <label for="Branch" ></label>
 
 				<select id="Branch">
   				<option value="CSE">CSE</option>
@@ -117,62 +127,61 @@
 			 	<td ><div align="left">Section</div></td>
             	
             	<td align="left"  >
-				&emsp;&emsp;: <label for="Section" ></label>
+				: <label for="Section" ></label>
 
 				<select id="Section">
-  				<option value="1">1</option>
-    			<option value="2">2</option>
-    			<option value="3">3</option>
+  				<option value="1">Section-1</option>
+    			<option value="2">Section-2</option>
+    			<option value="3">Section-3</option>
 				</select></td>
 			</tr>
 			<tr>
 				<td ><div align="left">Date of Birth</div></td>
             	
             
-				<td align="right" >
+				<td align="center" >
 				 : <input type="Date"  ></td>
 				<td ><div align="left">Age</div></td>
             	
             
-				<td align="right"  >
-				 : <input type="text"  size="17">yrs</td>
+				<td align="center"  >
+				 : <input type="number"  size="17">yrs</td>
 			 	<td ><div align="left">Religion</div></td>
             	
-            	<td align="right"  >
+            	<td align="center"  >
 				: <input type="text"  ></td>
 			</tr>
 			<tr>
 				<td ><div align="left">House/Flat No.</div></td>
             	
             
-				<td align="right" >
+				<td align="center" >
 				: <input type="text" ></td>
 				<td ><div align="left">Gender</div></td>
             	
             
 				<td align="left"  >
-				&emsp;&emsp;: 
-  					<input type="radio" name="gender" id="male" value="male">
-  					<label for="male">Male</label>
-  					
-  					<input type="radio" name="gender" id="female" value="female">
-  					<label for="female">Female</label></td>
+				: 
+  				
+				 <input name="relocate" value="1" type="radio">Male
+                 <input name="relocate" value="0" type="radio" checked="">Female
+                 </td>
 			 	<td ><div align="left">Mobile no.</div></td>
             	
-            	<td align="right"  >
-				: <input type="number"  ></td>
+            	<td align="center"  >
+				: <input type="tel"  ></td>
 			</tr>
 			<tr>
 				<td ><div align="left">Building/Colony Name</div></td>
             	
             
-				<td align="right" >
+				<td align="center" >
 				: <input type="text"  ></td>
 				<td ><div align="left">Category</div></td>
             	
             
 				<td align="left"  >
-				&emsp;&emsp;: <label for="Category" ></label>
+				: <label for="Category" ></label>
 
 				<select id="Category">
   				<option value="OC">OC</option>
@@ -182,30 +191,30 @@
 				</select></td>
 			 	<td ><div align="left">Father/Guardian Name</div></td>
             	
-            	<td align="right"  >
+            	<td align="center"  >
 				: <input type="text"  ></td>
 			</tr>
 			<tr>
 				<td ><div align="left">City</div></td>
             	
             
-				<td align="right" >
-				: <input type="number"  ></td>
+				<td align="center" >
+				: <input type="text"  ></td>
 				<td ><div align="left">Aadhar Number</div></td>
             	
             
-				<td align="right"  >
+				<td align="center"  >
 				: <input type="number"  ></td>
 			 	<td ><div align="left">Occupation of Father</div></td>
             	
-            	<td align="right"  >
+            	<td align="center"  >
 				: <input type="text"  ></td>
 			</tr>
 			<tr>
 				<td ><div align="left">State</td>
             	
             
-				<td align = "right">
+				<td align = "left">
 				: <label for="State" ></label>
 
 				<select id="State">
@@ -220,27 +229,27 @@
 				<td ><div align="left">PAN Number</div></td>
             	
             
-				<td align="right"  >
+				<td align="center"  >
 				: <input type="number" ></td>
 			 	<td ><div align="left">Res/parent phone</div></td>
             	
-            	<td align="right"  >
+            	<td align="center"  >
 				: <input type="number"  ></td>
 			</tr>
 			<tr>
 				<td ><div align="left">Pin Code</td>
             	
             
-				<td align="right" >
-				: <input type="number" id="userimg" ></td>
+				<td align="center" >
+				: <input type="number" ></td>
 				<td ><div align="left">Passport No.</div></td>
             	
-				<td align="right"  >
-				: <input type="text" id="userimg" ></td>
+				<td align="center"  >
+				: <input type="text"  ></td>
 			 	<td ><div align="left">Nationality</div></td>
             	
             	<td align = "left">
-				&emsp;&ensp; : <label for="Nationality" ></label>
+				 : <label for="Nationality" ></label>
 
 				<select id="Nationality">
   				<option value="INDIAN">INDIAN</option>
@@ -253,7 +262,7 @@
 		</table>
 	</div>
 	<div style="width: 100%">
-		</form>
+		
 		<p style="font-size-adjust: 20px;color:#C71585;" align="center">Pre-Engineering Education Details:</p>
 		<style type="text/css">
 			.table2 {
@@ -333,11 +342,11 @@
     		<p>&emsp;<b>NOTE:</b>&emsp;&emsp;&emsp;&ensp;In intermediate if result is based on CGPA, enter 10 in Max. marks field and enter your CGPA in Marks Secured field.</p></td></tr>
   		</table>
   	</div>
-  		<form style = "text-align:center;">
+  		
       
 			<label for="rank">Eamcet/Ecet Rank :&emsp;</label>
   				<input type = "text" id = "rank" name = "rank">
-			</form>
+			
 		<div>
 		<style type="text/css">
 			.sree{
@@ -444,9 +453,11 @@
       	<p style="font-size: 18px;">I hereby declare that the information furnished above is true to the best of my knowledge. I do hereby declare that above of information and facts stated are true, correct and complete to the best of my knowledge and belief.</p>
       </div>
       <div align="center">
-      	<input type="submit" value="Agree & Save" style="color: red;">&emsp;&emsp; <input type="submit" value="Clear Data" style="color: red;"><br>
+      	<input type="submit" value="Agree & Save" style="color: red;">&emsp;&emsp; <input type="reset" value="Clear Data" style="color: red;"><br>
       	<p style="color: #C71585;font-size: 20px;"><b>Note : Please check all the information you have entered before clicking on Submit. Once you click on Submit data will be stored</b></p>
       </div>
+
       </form>
+       </fieldset>
     </body>
  </html>
